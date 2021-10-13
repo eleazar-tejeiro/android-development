@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="tit_suma">Sumar</string>
+    <string name="tit_resta">Restar</string>
+    <string name="tit_mult">Multiplicar</string>
+    <string name="tit_div">Dividir</string>
+    <string name="tit_resultado">Resultado</string>
+    <string name="tit_valor1">Valor 1</string>
+    <string name="tit_valor2">Valor 2</string>
+    <string name="sum">Sumando</string>
+    <string name="rest">Restando</string>
+    <string name="multi">Multiplicando</string>
+    <string name="divi">Dividiendo</string>
+</resources>

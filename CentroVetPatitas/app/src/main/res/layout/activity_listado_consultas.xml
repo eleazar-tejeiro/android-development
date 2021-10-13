@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listViewConsultas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/elBotoncitoFlotante2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="30dp"
+        android:onClick="btn_adicionar_consulta"
+        android:src="@drawable/ic_adiciona_elemento_foreground"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+</FrameLayout>

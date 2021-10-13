@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".actividades.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCiudadBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:ems="10"
+        android:hint="Consulte asi: Ciudad, Pais"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewCiudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Consultar Clima" />
+
+    <Button
+        android:id="@+id/buttonTraerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trae Producto" />
+
+    <Button
+        android:id="@+id/buttonAdicionarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adiciona Producto" />
+
+</LinearLayout>

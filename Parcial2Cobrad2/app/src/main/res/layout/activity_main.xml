@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/background_gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".actividades.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:text="BUSCADOR DE DEUDAS"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextCiDeudor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_rectangle_edittext"
+        android:hint="CI Deudor"
+        android:padding="8dp"
+        android:textColor="#80FFFFFF"
+        android:textColorHint="#80FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonBuscarDeudas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rectangle_button"
+        android:text="BUSCAR deudas"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+</LinearLayout>

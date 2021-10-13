@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="74dp"
+        android:layout_height="23dp"
+        android:autoText="false"
+        android:gravity="center"
+        android:text="@string/tit_resultado"
+        android:textAllCaps="true"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/editTextResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/editTextResultado"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="110dp"
+        android:layout_height="285dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/tit_suma" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="@string/tit_resta" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="@string/tit_mult" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/tit_div" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="241dp"
+        android:layout_height="282dp"
+        android:gravity="center|clip_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextResultado"
+        app:layout_constraintVertical_bias="0.14">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tit_valor1" />
+
+        <EditText
+            android:id="@+id/cajaVal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tit_valor2" />
+
+        <EditText
+            android:id="@+id/cajaVal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

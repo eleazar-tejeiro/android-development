@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtNombreDeudor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre Deudor"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtCiDeudor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CI Deudor"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fecha Vencimiento:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edtFechaInicioObra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DD-MM-YYYY"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtGlosaDeuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Glosa Deuda"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Monto Deuda"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estado: "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/edtEstadoVigenteObra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PENDIENTE"
+            android:textColor="#000000"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>

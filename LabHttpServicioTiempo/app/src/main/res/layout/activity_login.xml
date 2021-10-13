@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".actividades.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="INICIO DE SESIÓN"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextUsuarioLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Usuario"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="#80FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="#80FFFFFF"
+            android:textColorHint="#80FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonLoguear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="INICIAR SESIÓN"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_context_modificar"
+        android:title="Modificar" />
+    <item
+        android:id="@+id/menu_context_eliminar"
+        android:title="Eliminar" />
+    <item
+        android:id="@+id/menu_context_add_cita"
+        android:title="Agregar Cita" />
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690813664751",
+    "project_id": "proyectospotifyyt",
+    "storage_bucket": "proyectospotifyyt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690813664751:android:0867e6c89f64f728aa0a1a",
+        "android_client_info": {
+          "package_name": "com.uriel.anahi.proyectospotifyyt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690813664751-rgfs5ikpupm5rt2rgqf47saajgmkami7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1MxcAowW0nPGOfJJBXdq4riEaN6SXuQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690813664751-rgfs5ikpupm5rt2rgqf47saajgmkami7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

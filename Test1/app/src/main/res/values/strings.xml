@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="tit_suma">Plus</string>
+    <string name="tit_resta">Minus</string>
+    <string name="tit_mult">Multiply</string>
+    <string name="tit_div">Divide</string>
+    <string name="tit_resultado">Result</string>
+    <string name="tit_valor1">Value 1</string>
+    <string name="tit_valor2">Value 2</string>
+    <string name="sum">Adding</string>
+    <string name="rest">Substracting</string>
+    <string name="multi">Multiplying</string>
+    <string name="divi">Dividing</string>
+</resources>

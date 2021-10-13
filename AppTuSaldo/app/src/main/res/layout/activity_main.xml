@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Control de gastos e ingresos:"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/somosBs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rd10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10 Bs" />
+
+                <RadioButton
+                    android:id="@+id/rd20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20 Bs" />
+
+                <RadioButton
+                    android:id="@+id/rd50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="50 Bs" />
+
+                <RadioButton
+                    android:id="@+id/rd100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="100 Bs" />
+
+                <RadioButton
+                    android:id="@+id/rd200"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="200 Bs" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="119dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnQuita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btnAdiciona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu saldo actual:"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txtSimbolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bs."
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegistra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar operacion" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".actividades.MainActivity" >
+
+    <fragment
+        android:id="@+id/maestroFragment"
+        android:name="uriel.eleazar.tejeiro.garcia.laboratoriofragmentos.fragments.MaestroFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        tools:layout="@layout/fragment_maestro" />
+
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="uriel.eleazar.tejeiro.garcia.laboratoriofragmentos.fragments.DetalleFragment"
+        android:layout_width="0dp"
+        tools:layout="@layout/fragment_detalle"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"/>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="221dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos de la Mascota"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cajaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="id"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cajaNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre del animal"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cajaEspecie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Especie"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cajaGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Género"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cajaRaza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Raza"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cajaEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cajaPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Peso"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Esterilizado" />
+
+            <ToggleButton
+                android:id="@+id/opcionEsterilizado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esterilizado"
+                android:textOff="No"
+                android:textOn="Si" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vacunado" />
+
+            <ToggleButton
+                android:id="@+id/opcionVacunado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vacunado"
+                android:textOff="No"
+                android:textOn="Si" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGuardame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnGuardar_Click"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btnBuscalo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_weight="1"
+                android:onClick="btnTraerXId_Click"
+                android:text="Traer por id" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btnEliminar_Click"
+                android:text="Eliminar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBuscaMascota"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15px"
+                android:onClick="btnBuscarXNombre_Click"
+                android:text="Buscar Mascota" />
+
+            <Button
+                android:id="@+id/btnModificalo"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:onClick="btnModificar_Click"
+                android:text="Modificar mascota" />
+
+            <Button
+                android:id="@+id/btnMuestraMascotas"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:onClick="btnMuestraMascotas_Click"
+                android:text="muestra mascotas" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
